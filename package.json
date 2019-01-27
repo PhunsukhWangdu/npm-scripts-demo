@@ -4,8 +4,12 @@
   "description": "a demo for practicing npm and scripts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint *.js"
+    "lint:js": "eslint *.js",
+    "lint:css": "stylelint *.less",
+    "lint:json": "jsonlint --quiet *.json",
+    "mocha": "mocha test/",
+    "lint:js:fix": "eslint *.js --fix",
+    "test": "# 运行所有代码检查和单元测试 \n npm-run-all --parallel lint:* mocha"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,12 @@
   "homepage": "https://github.com/PhunsukhWangdu/npm-scripts-demo#readme",
   "devDependencies": {
     "eslint": "^5.12.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "chai": "^4.1.2",
+    "jsonlint": "^1.6.2",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0"
   }
 }
