@@ -1,0 +1,25 @@
+{
+  "name": "npm-scripts-demo",
+  "version": "1.0.0",
+  "description": "a demo for practicing npm and scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhunsukhWangdu/npm-scripts-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhunsukhWangdu/npm-scripts-demo/issues"
+  },
+  "homepage": "https://github.com/PhunsukhWangdu/npm-scripts-demo#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}
